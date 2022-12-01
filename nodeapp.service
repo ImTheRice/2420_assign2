@@ -1,0 +1,11 @@
+[Unit]
+Description=Starts the node api server.
+After=network-online.target
+
+[Service]
+Type=notify
+ExecStart=/root/.volta/bin/node /opt/node/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
