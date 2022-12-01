@@ -1,0 +1,5 @@
+htt://137.184.247.244 {
+	root * /var/www
+	reverse_proxy /api 127.0.0.1:5050
+	file_server
+}
